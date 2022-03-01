@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout RCHLO</title>
 
-    <link href="css/bootstrap.css" rel="stylesheet" >
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -41,8 +41,8 @@
 
             <fieldset class="total-amount">
                 <label for="amount" class="form-label">Quantidade</label>
-                <input id="amount" onclick="calculateTotal()" type="number" min="1" maxlength="99" value="1"
-                    class="form-control">
+                <input id="amount" onclick="calculateTotal()" onchange="calculateTotal()" type="number" min="1"
+                    maxlength="99" value="1" class="form-control">
                 <label for="total" class="form-label">Total</label>
                 <input id="total" class="form-control" readonly>
             </fieldset>
