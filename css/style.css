@@ -1,0 +1,174 @@
+@charset "UTF-8";
+ h1 {
+     font-size: 50px;
+ }
+
+ p {
+     font-size: 22px;
+ }
+
+ fieldset {
+     margin-left: 1rem;
+     margin-right: 1rem;
+     margin-top: 1rem;
+ }
+
+ select {
+     margin-bottom: 1rem;
+ }
+
+ button {
+     margin: 17px;
+ }
+
+ .header {
+     background-color: rgb(237, 237, 240);
+     padding-bottom: 40px;
+ }
+
+ .card-group {
+     margin: auto;
+     padding: 25px;
+ }
+
+ .card-body {
+     background-color: rgb(247, 247, 247);
+ }
+
+ .card-title {
+     font-size: 30px;
+ }
+
+ .card-footer {
+     background-color: rgb(255, 255, 255);
+     padding: 20px;
+ }
+
+ .card-img-top {
+     padding: 4px;
+     background-color: white;
+     border: 1px solid rgba(0, 0, 0, 0.125);
+     border-radius: 0.25rem;
+     margin-bottom: 20px;
+ }
+
+ .form-control {
+     width: 100%;
+     margin-bottom: 1rem;
+     margin-right: 1rem;
+ }
+
+ @media (min-width: 320px) and (max-width: 768px) {
+     .card {
+         width: 100%;
+     }
+
+     .content-header {
+         margin: auto;
+         padding-top: 50px;
+         padding-left: 30px;
+         padding-right: 15px;
+     }
+
+     .total-amount {
+         margin: auto;
+         width: 95%;
+         margin-top: -20px;
+         margin-bottom: 20px;
+         height: 180px;
+         border: solid rgba(128, 128, 128, 0.315) 1px;
+         padding: 12px;
+     }
+ }
+
+ @media (min-width: 768px) and (max-width: 992px) {
+
+     .fildset-card {
+         width: 100%;
+     }
+
+     .fildset-client {
+         width: 100%;
+     }
+
+     .fields {
+         display: inline-flex;
+         width: 65%;
+         height: 500px;
+         flex-wrap: wrap;
+     }
+
+     .content-header {
+         margin: auto;
+         padding-top: 50px;
+         padding-left: 30px;
+     }
+
+     .btn {
+         height: 40px;
+     }
+
+     .total-amount {
+         margin: auto;
+         width: 95%;
+         margin-top: -20px;
+         margin-bottom: 10px;
+         height: 180px;
+         border: solid rgba(128, 128, 128, 0.315) 1px;
+         padding: 12px;
+     }
+ }
+
+ @media (min-width: 992px) {
+     .card {
+         margin-right: 1rem;
+         margin-left: 1rem;
+     }
+
+     .fields {
+         display: inline-flex;
+         width: 70%;
+         height: 100%;
+         flex-wrap: wrap;
+     }
+
+     .fildset-card {
+         width: 45%;
+     }
+
+     .fildset-client {
+         width: 45%;
+     }
+
+     .card-group {
+
+         max-width: 1300px;
+         margin-top: 3rem;
+     }
+
+     .content-header {
+         max-width: 1250px;
+         margin: auto;
+         padding-top: 90px;
+         padding-left: 50px;
+     }
+
+     .header {
+         padding-bottom: 80px;
+     }
+
+     .total-amount {
+         margin: auto;
+         width: 95%;
+         margin-top: -20px;
+         margin-bottom: 10px;
+         height: 180px;
+         border: solid rgba(128, 128, 128, 0.315) 1px;
+         padding: 12px;
+
+     }
+
+     .btn {
+         height: 50px;
+     }
+ }

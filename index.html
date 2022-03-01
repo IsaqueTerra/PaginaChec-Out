@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout RCHLO</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="content-header">
+            <h1>Ótima escolha!</h1>
+            <p>Obrigado por comprar na RCHLO! Preencha seus dados para efetivar a compra.</p>
+        </div>
+    </header>
+
+    <main class="card-group">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Sua Compra</h5>
+            </div>
+
+            <div class="card-footer">
+                <img src=" https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg"
+                    class="card-img-top" alt="model">
+                <dl>
+                    <dt>Produto</dt>
+                    <dd>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</dd>
+                    <dt>Cor</dt>
+                    <dd>Branco</dd>
+                    <dt>Tamanho</dt>
+                    <dd>G</dd>
+                    <dt>Preço</dt>
+                    <dd>R$ 69,90</dd>
+                </dl>
+            </div>
+
+            <fieldset class="total-amount">
+                <label for="amount" class="form-label">Quantidade</label>
+                <input id="amount" onclick="calculateTotal()" type="number" min="1" maxlength="99" value="1"
+                    class="form-control">
+                <label for="total" class="form-label">Total</label>
+                <input id="total" class="form-control" readonly>
+            </fieldset>
+        </div>
+
+        <form class="fields">
+            <fieldset class="fildset-client">
+                <legend>Dados Pessoais</legend>
+                <label for="full-name" class="form-label">Nome Completo</label>
+                <input id="full-name" type="text" minlength="1" maxlength="200" class="form-control" maxlength="200"
+                    required>
+                <label for="email" class="form-label" minlength="1" maxlength="300">Email</label>
+                <input id="email" type="email" class="form-control" placeholder="email@exemplo.com" maxlength="300"
+                    required>
+                <label for="cpf" class="form-label">CPF</label>
+                <input id="cpf" type="text" class="form-control" minlength="14" maxlength="14"
+                    pattern="(\d{3}).(\d{3}).(\d{3})-(\d{2})" title="Digite o CPF no formato XXX.XXX.XXX-XX" required>
+                <input id="checkbox" type="checkbox" class="form-check-input">
+                <label>Quero receber a newsletter da RCHLO!</label>
+            </fieldset>
+
+            <fieldset class="fildset-card">
+                <legend>Cartão de crédito</legend>
+                <label for="password" class="form-label">Número - CVV</label>
+                <input id="password" type="password" class="form-control" minlength="3" maxlength="3" required>
+                <label for="flag-card" class="form-label">Bandeira</label>
+                <select name="select" id="select" class="form-select" required>
+                    <option value="" selected disabled>Selecione um opção...</option>
+                    <option value="1">MasterCard</option>
+                    <option value="2">VISA</option>
+                    <option value="3">American Express</option>
+                </select>
+                <label for="validity" class="form-label">Validade</label>
+                <input id="date" type="date" nome="input-date" class="form-control" required>
+            </fieldset>
+
+            <button type="submit" id="buttom" class="btn btn-primary">Confirmar Pedido</button>
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
